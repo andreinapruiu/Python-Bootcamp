@@ -1,0 +1,13 @@
+def foo_bar(n):
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FooBar")
+        elif i % 3 == 0:
+            print("Foo")
+        elif i % 5 == 0:
+            print("Bar")
+        else:
+            print(i)
+
+number = int(input("Enter an integer: "))
+foo_bar(number)
